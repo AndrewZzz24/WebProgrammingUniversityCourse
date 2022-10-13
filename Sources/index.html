@@ -2,62 +2,115 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Резюме Страница Виктор Хапка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Резюме страница Виктора Хапки">
+    <meta name="keywords" content="resume, Viktor, Hapka, CV">
+    <link rel="icon" href="/Sources/MediaSources/main_icon.png" type="image/png">
+    <title>Резюме Страница Виктора Хапки</title>
 </head>
 <body>
 <header>
-    <h1>Виктор Хапка</h1>
-    <nav>
-        <h2>Навигация по сайту</h2>
+    <h1>
+        <span>
+            Виктор Хапка
+        </span>
+    </h1>
+    <nav class="navbar-default">
+        <a class="navbar-logo" href="./index.html">
+            <img alt="logo" class="navbar-logo" src="MediaSources/icon_compressed.jpg">
+            <a class="navbar-button" href="./experience.html">Опыт Работы</a>
+            <a class="navbar-button" href="./projects.html">Мои Проекты</a>
+        </a>
     </nav>
 </header>
 <main>
     <section>
-        <h3>Информация обо мне</h3>
+        <h2>
+            <span>Информация обо мне</span>
+        </h2>
         <p>
-            Люблю программировать
-        <ul>
-            <li>Имею опыт в программировании на C# (5 лет)
-                <ul>
-                    <li>Написал
-                        <del>крупный</del>
-                        микросервис для компании, которая успешно реализует его
-                    </li>
-                    <li>Создал своё расширение в Visual Studio для C# для рефакторинга кода, которое <b>скачало больше
-                        5млн</b>
-                        человек
-                    </li>
-                </ul>
-            </li>
-            <li> Хорошо разбираюсь в базах данных
-                <ul>
-                    <li><strong>Спроектировал базу данных</strong> для
-                        <ins>
-                            <del>крупной</del>
-                            компании
-                        </ins>
-                        , чтобы они могли хранить
-                        необходимую информацию
-                    </li>
-                    <li>Участвовал как приглашенный лектор на преподавание предмета в университете ИТМО</li>
-                </ul>
-            </li>
-        </ul>
-        <p>
-            Хорошо работаю в команде
-        <ol>
-            <li> Был team lead в команде по разработке микросервисов</li>
-            <li> Занимал позицию architect engineer при проектировке базы данных, руководил проектом</li>
-        </ol>
+            <span>
+                Виктор Хапка, 5 лет опыта в сфере, люблю программировать и разрабатывать базы данных.
+            </span>
+        </p>
     </section>
-    <article>
-        Опыт
-    </article>
+    <div>
+        <div>
+            <h2>
+                <span>Опыт работы</span>
+            </h2>
+            <ul>
+                <li>
+                    <h4>
+                        <span>ITMO University teacher</span>
+                    </h4>
+                    <ul>
+                        <li>
+                        <span>
+                            Написал <del>крупный</del> микросервис для компании, которая успешно реализует его
+                        </span>
+                        </li>
+                        <li>
+                        <span>
+                            Создал своё расширение в Visual Studio для C# для рефакторинга кода, которое <b>скачало больше 5млн</b> человек
+                        </span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>
+                        <span>Data base разработчик</span>
+                    </h4>
+                    <ul>
+                        <li>
+                        <span>
+                            <b>Спроектировал базу данных</b> для<ins><del>крупной</del> компании</ins>,
+                            чтобы они могли хранить необходимую информацию
+                        </span>
+                        </li>
+                        <li>
+                        <span>
+                            Участвовал как приглашенный лектор на преподавание предмета в университете ИТМО
+                        </span>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>
+                <span>Мои достижения</span>
+            </h2>
+            <ol>
+                <li>
+                    <span> Победитель олимпиады <strong>(призёр 1й степени)</strong></span>
+                </li>
+                <li>
+                    <span> Финалист олимпиады <strong>(топ 100 из 1000)</strong></span>
+                </li>
+            </ol>
+        </div>
+    </div>
     <aside>
-        Контактные данные
+        <h2>
+            <span>Контактные данные</span>
+        </h2>
+        <div>
+            <ol>
+                <li>
+                    <span>8-800-555-35-35</span>
+                </li>
+                <li>
+                    <span>email: viktorhapka@gmail.com</span>
+                </li>
+            </ol>
+        </div>
     </aside>
     <section>
-        <h5>ASCII art</h5>
+        <h2>
+            <span>ASCII art</span>
+        </h2>
         <pre>
             _|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|
             ___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|__
@@ -80,23 +133,31 @@
         </pre>
     </section>
     <section>
-        <h5>Пример кода на Java</h5>
+        <h2>
+            <span>Пример кода на Java</span>
+        </h2>
         <pre>
-        <code>
-            public static void main(String[] args){
-                System.out.println("Hello world");
-            }
-        </code>
-    </pre>
+            <code>
+                public static void main(String[] args){
+                    System.out.println("Hello world");
+                }
+            </code>
+        </pre>
     </section>
 </main>
 <footer>
-    <h3>Цитаты великих людей</h3>
+    <h2>
+        <span>Цитаты великих людей</span>
+    </h2>
     <blockquote>
         <p>
-            <q>Hard work <br> pays off</q>
+            <span>
+                <q>Hard work pays off. <br> H<sub>2</sub>O - просто вода </q>
+            </span>
         </p>
-        <cite> Successful person </cite>
+        <cite>
+            <span> (С) Успешный человек </span>
+        </cite>
     </blockquote>
 </footer>
 </body>
