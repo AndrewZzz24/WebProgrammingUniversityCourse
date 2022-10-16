@@ -6,97 +6,99 @@
     <meta name="description" content="Резюме страница Виктора Хапки">
     <meta name="keywords" content="resume, Viktor, Hapka, CV">
     <link rel="icon" href="/Sources/MediaSources/main_icon.png" type="image/png">
+    <link rel="stylesheet" href="Sources/Styles/Layouts/body.css" type="text/css">
+    <link rel="stylesheet" href="Sources/Styles/Layouts/header.css" type="text/css">
+    <link rel="stylesheet" href="Sources/Styles/Layouts/main.css" type="text/css">
+    <link rel="stylesheet" href="Sources/Styles/Layouts/footer.css" type="text/css">
     <title>Резюме Страница Виктора Хапки</title>
 </head>
-<body>
-<header>
-    <h1>
+<body class="default-body">
+<header class="default-header">
+    <h1 class="default-header-name">
         <span>
             Виктор Хапка
         </span>
     </h1>
-    <nav class="navbar-default">
+    <nav class="default-header-navbar">
         <a class="navbar-logo" href="./index.html">
             <img alt="logo" class="navbar-logo" src="Sources/MediaSources/icon_compressed.jpg">
-            <a class="navbar-button" href="experience.html">Опыт Работы</a>
-            <a class="navbar-button" href="projects.html">Мои Проекты</a>
+            <a class="default-header-navbar-button" href="experience.html">Опыт Работы</a>
+            <a class="default-header-navbar-button" href="projects.html">Мои Проекты</a>
         </a>
     </nav>
 </header>
 <main>
-    <section>
-        <h2>
+    <div class="main-section">
+        <h2 class="main-section-header">
             <span>Информация обо мне</span>
         </h2>
-        <p>
+        <p class="main-section-text">
             <span>
                 Виктор Хапка, 5 лет опыта в сфере, люблю программировать и разрабатывать базы данных.
             </span>
         </p>
-    </section>
-    <div>
-        <div>
-            <h2>
-                <span>Опыт работы</span>
-            </h2>
-            <ul>
-                <li>
-                    <h4>
-                        <span>ITMO University teacher</span>
-                    </h4>
-                    <ul>
-                        <li>
+    </div>
+    <div class="main-section">
+        <h2 class="main-section-header">
+            <span>Опыт работы</span>
+        </h2>
+        <ul class="main-section-text">
+            <li>
+                <h4>
+                    <span>ITMO University teacher</span>
+                </h4>
+                <ul>
+                    <li>
                         <span>
                             Написал <del>крупный</del> микросервис для компании, которая успешно реализует его
                         </span>
-                        </li>
-                        <li>
+                    </li>
+                    <li>
                         <span>
                             Создал своё расширение в Visual Studio для C# для рефакторинга кода, которое <b>скачало больше 5млн</b> человек
                         </span>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>
-                        <span>Data base разработчик</span>
-                    </h4>
-                    <ul>
-                        <li>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>
+                    <span>Data base разработчик</span>
+                </h4>
+                <ul>
+                    <li>
                         <span>
                             <b>Спроектировал базу данных</b> для<ins><del>крупной</del> компании</ins>,
                             чтобы они могли хранить необходимую информацию
                         </span>
-                        </li>
-                        <li>
+                    </li>
+                    <li>
                         <span>
                             Участвовал как приглашенный лектор на преподавание предмета в университете ИТМО
                         </span>
-                        </li>
+                    </li>
 
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h2>
-                <span>Мои достижения</span>
-            </h2>
-            <ol>
-                <li>
-                    <span> Победитель олимпиады <strong>(призёр 1й степени)</strong></span>
-                </li>
-                <li>
-                    <span> Финалист олимпиады <strong>(топ 100 из 1000)</strong></span>
-                </li>
-            </ol>
-        </div>
+                </ul>
+            </li>
+        </ul>
     </div>
-    <aside>
-        <h2>
+    <div class="main-section">
+        <h2 class="main-section-header">
+            <span>Мои достижения</span>
+        </h2>
+        <ol class="main-section-text">
+            <li>
+                <span> Победитель олимпиады <strong>(призёр 1й степени)</strong></span>
+            </li>
+            <li>
+                <span> Финалист олимпиады <strong>(топ 100 из 1000)</strong></span>
+            </li>
+        </ol>
+    </div>
+    <aside class="main-section">
+        <h2 class="main-section-header">
             <span>Контактные данные</span>
         </h2>
-        <div>
+        <div class="main-section-text">
             <ol>
                 <li>
                     <span>8-800-555-35-35</span>
@@ -107,8 +109,8 @@
             </ol>
         </div>
     </aside>
-    <section>
-        <h2>
+    <section class="main-section">
+        <h2 class="main-section-header">
             <span>ASCII art</span>
         </h2>
         <pre>
@@ -132,8 +134,14 @@
             ___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|__
         </pre>
     </section>
-    <section>
-        <h2>
+    <section class="main-section">
+        <h2 class="main-section-header">
+            <span>Галлерея изображений</span>
+        </h2>
+        <img alt="field" class="gallery_image" src="Sources/MediaSources/field.jpg">
+    </section>
+    <section class="main-section">
+        <h2 class="main-section-header">
             <span>Пример кода на Java</span>
         </h2>
         <pre>
@@ -144,21 +152,37 @@
             </code>
         </pre>
     </section>
-</main>
-<footer>
-    <h2>
-        <span>Цитаты великих людей</span>
-    </h2>
-    <blockquote>
-        <p>
+    <section class="main-section">
+        <h2 class="main-section-header">
+            <span>Цитаты великих людей</span>
+        </h2>
+        <blockquote class="main-section-text">
+            <p>
             <span>
                 <q>Hard work pays off. <br> H<sub>2</sub>O - просто вода </q>
             </span>
-        </p>
-        <cite>
-            <span> (С) Успешный человек </span>
-        </cite>
-    </blockquote>
+            </p>
+            <cite>
+                <span> (С) Успешный человек </span>
+            </cite>
+        </blockquote>
+    </section>
+</main>
+<footer class="default-footer">
+    <div class="default-footer-section">
+        <h2>
+            <span>
+                Contact us
+            </span>
+        </h2>
+        <nav class="default-footer-navbar">
+            <a class="default-footer-navbar-button" href="mailto:viktorhapka@gmail.com">Email</a>
+            <a class="default-footer-navbar-button" target="_blank" href="https://vk.com">VK </a>
+            <a class="default-footer-navbar-button" target="_blank" href="https://linkedin.com">LinkedIn </a>
+            <a class="default-footer-navbar-button" target="_blank" href="https://github.com">GitHub </a>
+            <a class="default-footer-navbar-button" target="_blank" href="https://leetcode.com">LeetCode </a>
+        </nav>
+    </div>
 </footer>
 </body>
 </html>
