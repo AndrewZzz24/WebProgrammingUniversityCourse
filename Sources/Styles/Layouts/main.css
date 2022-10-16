@@ -1,0 +1,18 @@
+.main-section {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    vertical-align: center;
+    text-indent: 10px;
+    white-space: normal;
+}
+
+.main-section-text {
+    font-family: Calibri, sans-serif;
+}
+
+.main-section-header {
+    font-family: Calibri, sans-serif;
+}
