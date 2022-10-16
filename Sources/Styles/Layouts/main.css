@@ -18,3 +18,11 @@
 .main-section-header {
     font-family: Calibri, sans-serif;
 }
+
+.gallery_image {
+    width: 100%;
+}
+
+pre {
+   margin: 0;
+}

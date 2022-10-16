@@ -12,8 +12,6 @@
 }
 
 .default-footer-navbar {
-    box-sizing: inherit;
-    display: flex;
     /*width: auto;*/
     min-height: 50px;
     align-items: center;
@@ -21,22 +19,25 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
 }
 
 .default-footer-navbar-button {
-    border: none;
+    border-radius: 15px;
+    padding: 15px 1em 15px 1em;
+    font-size: 17px;
+    border-width: 2px 2px;
+    border-style: solid;
+    margin: auto;
     /*background-color: #d79742;*/
     background-color: #706966;
     color: #adbac7;
-    padding: 10px;
-    width: 13%;
+    /*width: 13%;*/
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 20px;
     font-family: Calibri, sans-serif;
-    font-size: x-large;
     font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
 }
