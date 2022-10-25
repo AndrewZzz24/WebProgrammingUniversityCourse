@@ -2,7 +2,5 @@
     background-color: #22272e;
     background-attachment: fixed;
     color: #adbac7;
-    display: flex;
     min-height: 100vh;
-    flex-direction: column;
 }
