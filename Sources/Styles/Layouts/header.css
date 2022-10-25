@@ -1,7 +1,7 @@
 .default-header {
     background-color: #132235;
     padding: 0 10px;
-    margin: -6px;
+    margin: -70px -8px 0;
     color: #adbac7;
     border-bottom: 10px solid;
     border-color: #adbac7;
@@ -10,8 +10,9 @@
 .default-header-name {
     color: #adbac7;
     font-weight: bold;
-    font-family: Calibri, sans-serif;
-    font-size: 100px;
+    font-family: OpenSans, sans-serif;
+    padding-top: 50px;
+    font-size: 90px;
     text-align: center;
 }
 
@@ -39,9 +40,9 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 20px;
-    font-family: Calibri, serif;
+    font-family: OpenSans, sans-serif;
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
