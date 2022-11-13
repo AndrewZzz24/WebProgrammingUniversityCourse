@@ -6,22 +6,80 @@
     text-align: left;
     text-indent: 10px;
     white-space: normal;
+    font-family: "OpenSans", sans-serif;
 }
 
 .main-section-text {
-    font-family: Calibri, sans-serif;
     line-height: normal;
     letter-spacing: normal;
 }
 
 .main-section-header {
-    font-family: Calibri, sans-serif;
+    font-family: "OpenSans", sans-serif;
 }
 
-.gallery_image {
+.main-section-gallery {
+    margin: 0 20px 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
 }
 
-pre {
-   margin: 0;
+.main-section-gallery-picture {
+    margin: 10px;
+    flex: 2;
+    height: 600px;
+    overflow: hidden;
+    transition: 10ms;
+}
+
+.gallery_image {
+    z-index: 1;
+    height: auto;
+    object-fit: cover;
+    transition: transform 1.8s;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 1250px) {
+    .main-section .main-section-gallery {
+        display: block;
+    }
+}
+
+.table{
+    margin: 20px auto;
+}
+
+.grid-table {
+    display: grid;
+    border-width: 1px;
+    border-style: solid;
+    border-color: beige;
+    grid-template-columns: 1fr 1fr;
+}
+
+thead, tbody, tr {
+    display: contents;
+}
+
+.field-in-table {
+    padding: 10px;
+    text-align: center;
+}
+
+.row-table:nth-of-type(odd) .field-in-table {
+    background-color: #354457;
+}
+
+.row-table:nth-of-type(even) .field-in-table {
+    background-color: #22272e;
+}
+
+.head-table-theme {
+    background-color: #3b4e90;
+    text-align: center;
+    border-bottom: 1px solid beige;
 }
