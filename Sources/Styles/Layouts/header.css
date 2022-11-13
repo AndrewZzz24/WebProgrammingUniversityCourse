@@ -12,6 +12,7 @@
 .default-header-name {
     padding-top: 10px;
     margin: 10px;
+    width: auto;
     text-align: center;
     color: #adbac7;
     font-weight: bold;
@@ -20,12 +21,10 @@
 }
 
 .default-header-navbar {
-    /*padding: 12px;*/
     display: flex;
     width: auto;
     margin-right: -10px;
     margin-left: -10px;
-    /*background-color: #d79742;*/
 
     align-items: center;
     text-transform: uppercase;
