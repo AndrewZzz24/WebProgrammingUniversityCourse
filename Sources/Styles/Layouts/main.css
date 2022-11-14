@@ -28,7 +28,7 @@
 
 .main-section-gallery-picture {
     margin: 10px;
-    flex: 2;
+    flex: 1;
     height: 600px;
     overflow: hidden;
 }
