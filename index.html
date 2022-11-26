@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="Sources/Styles/Layouts/main.css" type="text/css">
     <link rel="stylesheet" href="Sources/Styles/Layouts/footer.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="Sources/Scripts/loadTimer.js"></script>
+    <script src="Sources/Scripts/activeButton.js"></script>
     <title>Резюме Страница Виктора Хапки</title>
 </head>
 <body class="default-body">
@@ -21,6 +23,7 @@
     <nav class="default-header-navbar">
         <a class="navbar-logo" href="./index.html">
             <!--            <img alt="logo" class="navbar-logo" src="Sources/MediaSources/icon_compressed.jpg">-->
+            <a class="default-header-navbar-button" href="index.html">Главная</a>
             <a class="default-header-navbar-button" href="experience.html">Опыт Работы</a>
             <a class="default-header-navbar-button" href="projects.html">Мои Проекты</a>
         </a>
@@ -181,6 +184,12 @@
             </cite>
         </blockquote>
     </section>
+    <section class="main-section">
+    <h2 class="main-section-header">Время загрузки</h2>
+    <div>
+        <span id="load-time">Страница загружена</span>
+    </div>
+</section>
 </main>
 <footer class="default-footer">
     <div class="default-footer-section">
