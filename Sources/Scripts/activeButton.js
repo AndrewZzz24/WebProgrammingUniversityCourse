@@ -1,16 +1,16 @@
 (function () {
     let pages = {
         'index.html': 'index',
-        'about_us.html': 'about-us',
-        'metrics.html': 'metrics',
+        'experience.html': 'experience',
+        'projects.html': 'projects',
     };
 
     function pageIsActive() {
         let itemId = pages[document.location.pathname.split('/').pop()];
-        document.getElementById(itemId).style.color = '#d79742';
+        document.getElementById(itemId).style.color = '#daa512';
     }
 
-    document.addEventListener('layoutIsLoad', () => {
+    document.addEventListener('DOMContentLoaded', () => {
         pageIsActive();
     })
 })();
