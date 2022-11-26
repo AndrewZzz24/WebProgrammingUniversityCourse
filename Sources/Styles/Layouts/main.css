@@ -29,23 +29,22 @@
 .main-section-gallery-picture {
     margin: 10px;
     flex: 1;
-    height: 600px;
     overflow: hidden;
 }
 
 .gallery_image {
     z-index: 1;
-    height: auto;
+    width: 100%;
     object-fit: cover;
 }
 
 @media screen and (max-width: 1250px) {
     .main-section .main-section-gallery {
-        display: none;
+        display: block;
     }
 }
 
-.table{
+.table {
     margin: 20px auto;
 }
 
@@ -61,20 +60,20 @@ thead, tbody, tr {
     display: contents;
 }
 
-.grid-table-row-field {
+tbody tr td {
     padding: 10px;
     text-align: center;
 }
 
-.grid-table-row:nth-of-type(odd) .grid-table-row-field {
+.grid-table tr:nth-of-type(odd) td {
     background-color: #354457;
 }
 
-.grid-table-row:nth-of-type(even) .grid-table-row-field {
-    background-color: #22272e;
+.grid-table tr:nth-of-type(even) td {
+    background-color: #706966;
 }
 
-.grid-table-header-style {
+thead tr th {
     background-color: #3b4e90;
     text-align: center;
     border-bottom: 1px solid beige;
