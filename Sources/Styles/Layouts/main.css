@@ -32,6 +32,20 @@
     overflow: hidden;
 }
 
+.contact{
+    padding: 5px;
+    border: #354457;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #354457;
+    color: #adbac7;
+}
+
+.list-item {
+    padding: 5px;
+    margin: 5px;
+}
+
 .gallery_image {
     z-index: 1;
     width: 100%;
