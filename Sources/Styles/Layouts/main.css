@@ -63,13 +63,14 @@ thead, tbody, tr {
 tbody tr td {
     padding: 10px;
     text-align: center;
+    border: 1px solid black;
 }
 
-.grid-table tr:nth-of-type(odd) td {
+tr:nth-of-type(odd) td {
     background-color: #354457;
 }
 
-.grid-table tr:nth-of-type(even) td {
+tr:nth-of-type(even) td {
     background-color: #706966;
 }
 
