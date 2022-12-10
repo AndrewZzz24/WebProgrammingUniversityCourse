@@ -1,10 +1,11 @@
 (function () {
-    let open_time = window.performance.timing.loadEventStart - window.performance.timing.navigationStart;
+    let startTime = new Date().getTime();
 
-    function load_time() {
-        document.getElementById('load-time').innerHTML =
-            'Время загузки составило: ' + open_time / 1000 + ' сек';
+    function timer() {
+        document.getElementById('load-time').innerHTML = 'Loaded in ' + (new Date().getTime() - startTime) / 1000 + ' seconds';
     }
 
-    document.addEventListener('DOMContentLoaded', load_time);
+    document.addEventListener("layoutIsLoad", _ => {
+        timer()
+    });
 })();
