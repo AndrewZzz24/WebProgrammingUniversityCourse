@@ -44,8 +44,10 @@ function renderSuggest(suggestObject) {
 }
 
 (function () {
-    document.addEventListener("DOMContentLoaded", () => {
-        listenToSubmit()
-        displayMetrics()
-    })
+    document.addEventListener(
+        "DOMContentLoaded",
+        () => {
+            listenToSubmit()
+            displayMetrics()
+        })
 })();
