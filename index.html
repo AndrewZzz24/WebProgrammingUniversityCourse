@@ -16,18 +16,17 @@
 <body class="default-body">
 <header class="default-header">
     <h1 class="default-header-name">
-           Виктор Хапка
+        Виктор Хапка
     </h1>
     <nav class="default-header-navbar">
         <a class="navbar-logo" href="./index.html">
-            <img alt="logo" class="navbar-logo" src="Sources/MediaSources/icon_compressed.jpg">
+            <!--            <img alt="logo" class="navbar-logo" src="Sources/MediaSources/icon_compressed.jpg">-->
             <a class="default-header-navbar-button" href="experience.html">Опыт Работы</a>
             <a class="default-header-navbar-button" href="projects.html">Мои Проекты</a>
         </a>
     </nav>
 </header>
 <main>
-
     <section class="main-section">
         <h2 class="main-section-header">
             Информация обо мне
@@ -57,15 +56,15 @@
                         <span>
                             Создал своё расширение в Visual Studio для C# для рефакторинга кода, которое <b>скачало больше 5млн</b> человек
                         </span>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>
-                        Data base разработчик
-                    </h4>
-                    <ul>
-                        <li>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>
+                    Data base разработчик
+                </h4>
+                <ul>
+                    <li>
                         <span>
                             <b>Спроектировал базу данных</b> для<ins><del>крупной</del> компании</ins>,
                             чтобы они могли хранить необходимую информацию
@@ -100,7 +99,7 @@
         <div class="main-section-text">
             <ol>
                 <li>
-                    <span class = "phone-number">
+                    <span class="phone-number">
                         <a href="tel:+78005553535">+7 (800) 555-35-35</a>
                     </span>
                 </li>
@@ -112,46 +111,60 @@
     </aside>
     <section class="main-section">
         <h2 class="main-section-header">
-            ASCII art
-        </h2>
-        <pre class="asci-art">
-_|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|
-___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|__
-_|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|
-___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|__
-_|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|
-___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|__
-_|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|
-___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|__
-_|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|
-___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|__
-_|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|
-___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|__
-_|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|
-___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|__
-_|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|
-___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|__
-_|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|
-___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|__
-        </pre>
-    </section>
-    <section class="main-section">
-        <h2 class="main-section-header">
             Галлерея изображений
         </h2>
-        <img alt="field" class="gallery_image" src="Sources/MediaSources/field.jpg">
+        <div class="main-section-gallery">
+            <div class="main-section-gallery-picture">
+                <img alt="field" class="gallery_image" src="Sources/MediaSources/field.jpg">
+            </div>
+            <div class="main-section-gallery-picture">
+                <img alt="field" class="gallery_image" src="Sources/MediaSources/field.jpg">
+            </div>
+            <div class="main-section-gallery-picture">
+                <img alt="field" class="gallery_image" src="Sources/MediaSources/field.jpg">
+            </div>
+            <div class="main-section-gallery-picture">
+                <img alt="field" class="gallery_image" src="Sources/MediaSources/field.jpg">
+            </div>
+        </div>
     </section>
     <section class="main-section">
-        <h2 class="main-section-header">
-            Пример кода на Java
-        </h2>
-        <pre>
-            <code>
-                public static void main(String[] args){
-                    System.out.println("Hello world");
-                }
-            </code>
-        </pre>
+        <div class="table">
+            <table class="grid-table">
+                <thead>
+                <tr>
+                    <th>Technology</th>
+                    <th>Level</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Java Core</td>
+                    <td>Experienced</td>
+                </tr>
+                <tr>
+                    <td>Spring Framework</td>
+                    <td>Familiar</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Familiar</td>
+                </tr>
+                <tr>
+                    <td>C#</td>
+                    <td>Familiar</td>
+                </tr>
+                <tr>
+                    <td>Java Script</td>
+                    <td>Familiar</td>
+                </tr>
+                <tr>
+                    <td>Php</td>
+                    <td>Familiar</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
     <section class="main-section">
         <h2 class="main-section-header">
@@ -171,9 +184,6 @@ ___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|__
 </main>
 <footer class="default-footer">
     <div class="default-footer-section">
-        <h2>
-            Contact us
-        </h2>
         <nav class="default-footer-navbar">
             <a href="mailto:viktorhapka@gmail.com">Email</a>
             <a target="_blank" href="https://vk.com">VK </a>
