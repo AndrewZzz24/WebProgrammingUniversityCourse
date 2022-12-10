@@ -58,6 +58,31 @@
     }
 }
 
+.header-text {
+    font-size: 20px;
+    margin: 0;
+    text-transform: capitalize
+}
+
+.contact-text {
+    font-size: 10px;
+    color: grey;
+    margin: 0;
+}
+
+.error-text {
+    color: hotpink;
+    text-transform: capitalize
+}
+
+.loading {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
 .table {
     margin: 20px auto;
 }
