@@ -5,7 +5,7 @@
         document.getElementById('load-time').innerHTML = 'Loaded in ' + (new Date().getTime() - startTime) / 1000 + ' seconds';
     }
 
-    document.addEventListener("layoutIsLoad", _ => {
+    document.addEventListener("DOMContentLoaded", _ => {
         timer()
     });
 })();
