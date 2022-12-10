@@ -35,10 +35,10 @@
             <span>Вопросы, Жалобы, Предложения</span>
         </h2>
         <div>
-            <form class="feedback-form">
-                <label for="title"></label><input type="text" maxlength="50" placeholder="Ваш вопрос" class="text-field box1" id="title">
-                <label for="contact"></label><input type="text" maxlength="50" placeholder="Контакт для связи" class="text-field box2" id="contact">
-                <label for="description"></label><input type="text" placeholder="Опиcание" class="text-field box3" id="description">
+            <form id="feedback-form-id" class="feedback-form">
+                <label for="title"></label><input required type="text" maxlength="50" placeholder="Ваш вопрос" class="text-field box1" id="title">
+                <label for="contact"></label><input required type="text" maxlength="50" placeholder="Контакт для связи" class="text-field box2" id="contact">
+                <label for="description"></label><input required type="text" placeholder="Опиcание" class="text-field box3" id="description">
                 <input type="submit" class="submit-button box4">
             </form>
         </div>
@@ -57,6 +57,19 @@
                 <tbody class="grid-from-table-body">
                 </tbody>
             </table>
+            <template id="feedback-form-response">
+                <tr>
+                    <td>
+                        ${suggestObject["title"].toString()}
+                    </td>
+                    <td>
+                        ${suggestObject["contact"].toString()}
+                    </td>
+                    <td>
+                        ${suggestObject["description"].toString()}
+                    </td>
+                </tr>
+            </template>
         </div>
     </section>
 </main>
