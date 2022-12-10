@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="Sources/Styles/Layouts/header.css" type="text/css">
     <link rel="stylesheet" href="Sources/Styles/Layouts/main.css" type="text/css">
     <link rel="stylesheet" href="Sources/Styles/Layouts/footer.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <script src="Sources/Scripts/loadTimer.js"></script>
     <script src="Sources/Scripts/activeButton.js"></script>
@@ -53,6 +54,25 @@
             </ol>
         </div>
     </aside>
+    <section class="main-section">
+        <h2 class="main-section-header">
+            Мои любимые технологии
+        </h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img alt="java_logo" src="Sources/MediaSources/java_logo.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img alt="python-logo" src="Sources/MediaSources/python_logo.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img alt="field_compresed" src="Sources/MediaSources/field-compressed.jpg">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
     <section class="main-section">
         <h2 class="main-section-header">
             Галлерея изображений
@@ -140,5 +160,7 @@
         <span id="load-time"></span>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="Sources/Scripts/swiper.js"></script>
 </body>
 </html>

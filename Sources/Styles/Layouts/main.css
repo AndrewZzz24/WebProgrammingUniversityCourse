@@ -32,7 +32,7 @@
     overflow: hidden;
 }
 
-.contact{
+.contact {
     padding: 5px;
     border: #354457;
     border-radius: 5px;
@@ -117,4 +117,27 @@ thead tr th {
     background-color: #3b4e90;
     text-align: center;
     border-bottom: 1px solid beige;
+}
+
+.swiper {
+    height: 700px;
+}
+
+.swiper-slide img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #bcbfc9 !important;
+}
+
+@media screen and (max-width: 700px) {
+    .swiper {
+        display: none;
+    }
 }
