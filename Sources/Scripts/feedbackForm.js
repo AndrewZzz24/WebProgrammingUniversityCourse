@@ -9,8 +9,8 @@ function listenToSubmit() {
 
         document.getElementById("feedback-form-id").reset();
 
-        if (localStorage.length === 0) {
-            localStorage.setItem("feedbackStorage", '[]')
+        if (localStorage.getItem("feedbackStorage") === null) {
+            localStorage.setItem("feedbackStorage", JSON.stringify([]))
         }
 
         let feedback_storage = JSON.parse(localStorage.getItem("feedbackStorage"))
