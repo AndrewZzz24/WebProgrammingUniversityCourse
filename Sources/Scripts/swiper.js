@@ -4,7 +4,7 @@
  */
 
 /*
-    Итициализация класса Swiper
+    Инициализация класса Swiper
 */
 const swiper = new Swiper(".mySwiper", {
     /*
