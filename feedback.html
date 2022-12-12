@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="Sources/Styles/Layouts/header.css" type="text/css">
     <link rel="stylesheet" href="Sources/Styles/Layouts/main.css" type="text/css">
     <link rel="stylesheet" href="Sources/Styles/Layouts/footer.css" type="text/css">
+    <link rel="stylesheet" href="Sources/Styles/Tables/feedback_form.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <script src="Sources/Scripts/loadTimer.js"></script>
     <script src="Sources/Scripts/activeButton.js"></script>
+    <script src="Sources/Scripts/feedbackForm.js"></script>
     <title>Опыт работы</title>
 </head>
 <body class="default-body">
@@ -29,46 +31,46 @@
 </header>
 <main>
     <section class="main-section">
-        <h2 class="main-section-header">
-            <span>Опыт работы</span>
+        <h2>
+            <span>Вопросы, Жалобы, Предложения</span>
         </h2>
-        <ul class="main-section-text">
-            <li>
-                <h4>
-                    ITMO University teacher
-                </h4>
-                <ul>
-                    <li>
-                        <span>
-                            Написал <del>крупный</del> микросервис для компании, которая успешно реализует его
-                        </span>
-                    </li>
-                    <li>
-                        <span>
-                            Создал своё расширение в Visual Studio для C# для рефакторинга кода, которое <b>скачало больше 5млн</b> человек
-                        </span>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h4>
-                    Data base разработчик
-                </h4>
-                <ul>
-                    <li>
-                        <span>
-                            <b>Спроектировал базу данных</b> для<ins><del>крупной</del> компании</ins>,
-                            чтобы они могли хранить необходимую информацию
-                        </span>
-                    </li>
-                    <li>
-                        <span>
-                            Участвовал как приглашенный лектор на преподавание предмета в университете ИТМО
-                        </span>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+        <div>
+            <form id="feedback-form-id" class="feedback-form">
+                <label for="title"></label><input required type="text" maxlength="50" placeholder="Ваш вопрос" class="text-field box1" id="title">
+                <label for="contact"></label><input required type="text" maxlength="50" placeholder="Контакт для связи" class="text-field box2" id="contact">
+                <label for="description"></label><input required type="text" placeholder="Опиcание" class="text-field box3" id="description">
+                <input type="submit" class="submit-button box4">
+            </form>
+        </div>
+        <h2>
+            <span>Ваши предложения:</span>
+        </h2>
+        <div>
+            <table class="grid-form-table">
+                <thead>
+                <tr>
+                    <th>Вопрос</th>
+                    <th>Контакт</th>
+                    <th>Описание</th>
+                </tr>
+                </thead>
+                <tbody class="grid-from-table-body">
+                </tbody>
+            </table>
+            <template id="feedback-form-response">
+                <tr>
+                    <td>
+                        ${suggestObject["title"].toString()}
+                    </td>
+                    <td>
+                        ${suggestObject["contact"].toString()}
+                    </td>
+                    <td>
+                        ${suggestObject["description"].toString()}
+                    </td>
+                </tr>
+            </template>
+        </div>
     </section>
 </main>
 <footer class="default-footer">
@@ -82,7 +84,7 @@
         </nav>
     </div>
     <div>
-        <span id="load-time">Страница загружена</span>
+        <span id="load-time"></span>
     </div>
 </footer>
 </body>

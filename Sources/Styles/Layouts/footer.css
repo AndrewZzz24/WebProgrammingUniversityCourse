@@ -40,3 +40,22 @@
     font-weight: bold;
     font-size: 17px;
 }
+
+.default-footer-navbar > a:hover {
+    padding: 20px 1em 15px 1em;
+    margin: 10px 1em;
+    min-width: 75px;
+    width: 10%;
+    border-radius: 15px;
+    border-width: 2px 2px;
+    border-style: solid;
+    justify-content: center;
+
+    background-color: #d79742;
+    color: #adbac7;
+    text-align: center;
+    text-decoration: none;
+    font-family: "OpenSans", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}

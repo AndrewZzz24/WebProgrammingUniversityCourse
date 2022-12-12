@@ -2,6 +2,7 @@
     z-index: 10;
     position: sticky;
     top: 0;
+    width: 100%;
     margin: -8px -8px -8px;
     border-bottom: 10px solid;
     border-color: #adbac7;
@@ -21,11 +22,12 @@
 }
 
 .default-header-navbar {
+    flex-wrap: wrap;
     display: flex;
-    width: auto;
+
     margin-right: -10px;
     margin-left: -10px;
-
+    justify-content: center;
     align-items: center;
     text-transform: uppercase;
     color: #d79742;
@@ -34,12 +36,27 @@
 
 .default-header-navbar-button {
     display: inline-block;
+    width: 145px;
     padding: 15px;
     margin: 5px auto;
     border-radius: 20px;
     text-align: center;
     text-decoration: none;
     background-color: #132235;
+    border: none;
+    color: #adbac7;
+    font-size: 14px;
+    font-family: OpenSans, sans-serif;
+    font-weight: bold;
+}
+.default-header-navbar-button:hover {
+    display: inline-block;
+    width: 145px;
+    padding: 15px;
+    margin: 5px auto;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #354457;
     border: none;
     color: #adbac7;
     font-size: 14px;
